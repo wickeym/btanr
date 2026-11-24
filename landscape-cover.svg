@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8ec3e4"/>
+      <stop offset="48%" stop-color="#f4e4c4"/>
+      <stop offset="100%" stop-color="#f6d2a4"/>
+    </linearGradient>
+    <linearGradient id="meadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8fb56f"/>
+      <stop offset="100%" stop-color="#5e8d4c"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="560" fill="url(#sky)"/>
+  <circle cx="800" cy="96" r="78" fill="#ffe7a8" opacity="0.35"/>
+  <circle cx="800" cy="96" r="44" fill="#ffe6a2"/>
+  <g fill="#fff" opacity="0.88">
+    <ellipse cx="168" cy="88" rx="52" ry="18"/>
+    <ellipse cx="204" cy="80" rx="34" ry="16"/>
+    <ellipse cx="136" cy="96" rx="28" ry="13"/>
+    <ellipse cx="520" cy="64" rx="42" ry="14"/>
+    <ellipse cx="552" cy="58" rx="26" ry="12"/>
+  </g>
+  <path d="M0 318c150-78 250 28 400-22 150-50 250 36 360-8 70-28 140 8 200-18v120H0Z" fill="#b7d2a4"/>
+  <path d="M0 378c170-48 290 46 470-8 170-52 250 40 490-28v218H0Z" fill="url(#meadow)"/>
+  <ellipse cx="230" cy="468" rx="168" ry="36" fill="#6aafc4"/>
+  <ellipse cx="200" cy="458" rx="78" ry="12" fill="#fff" opacity="0.35"/>
+  <ellipse cx="280" cy="476" rx="40" ry="6" fill="#fff" opacity="0.2"/>
+  <g fill="#3f7a49">
+    <path d="M120 470c6-22 8-22 14 0"/>
+    <path d="M148 478c5-18 8-18 12 0"/>
+    <path d="M300 480c6-20 8-20 14 0"/>
+    <path d="M330 472c5-16 7-16 12 0"/>
+  </g>
+
+  <!-- tree A -->
+  <g>
+    <path d="M168 408V328" stroke="#6b4630" stroke-width="18" stroke-linecap="round"/>
+    <ellipse cx="168" cy="292" rx="78" ry="54" fill="#2c6840"/>
+    <ellipse cx="122" cy="312" rx="44" ry="36" fill="#3c7d4c"/>
+    <ellipse cx="214" cy="308" rx="42" ry="34" fill="#347446"/>
+    <ellipse cx="168" cy="258" rx="38" ry="30" fill="#4d9260"/>
+  </g>
+  <!-- tree B -->
+  <g>
+    <path d="M452 468V292" stroke="#5c3d2a" stroke-width="22" stroke-linecap="round"/>
+    <path d="M452 332c28-8 58-18 86-28" stroke="#5c3d2a" stroke-width="8" stroke-linecap="round"/>
+    <ellipse cx="452" cy="236" rx="102" ry="74" fill="#275e38"/>
+    <ellipse cx="390" cy="262" rx="52" ry="42" fill="#3a7a4a"/>
+    <ellipse cx="516" cy="258" rx="50" ry="40" fill="#326e44"/>
+    <ellipse cx="452" cy="196" rx="46" ry="36" fill="#4a8d58"/>
+  </g>
+  <!-- tree C -->
+  <g>
+    <path d="M742 440V312" stroke="#6a4530" stroke-width="16" stroke-linecap="round"/>
+    <ellipse cx="742" cy="278" rx="72" ry="52" fill="#2f6b42"/>
+    <ellipse cx="700" cy="298" rx="40" ry="32" fill="#3e8050"/>
+    <ellipse cx="786" cy="294" rx="38" ry="30" fill="#357448"/>
+    <ellipse cx="742" cy="248" rx="34" ry="26" fill="#51945f"/>
+  </g>
+
+  <!-- birds, same anchors as the x-ray plate -->
+  <g fill="#3a332e">
+    <g transform="translate(318 132)">
+      <path d="M-6 2C-26-16-36-2-24 4Z"/>
+      <ellipse cx="2" cy="2" rx="14" ry="5.5"/>
+      <path d="M8 0C24-18 40-2 26 5Z"/>
+      <path d="M14 3h8" stroke="#e0a15a" stroke-width="1.6"/>
+    </g>
+    <g transform="translate(610 158)">
+      <path d="M-6 2C-24-14-32-1-22 4Z"/>
+      <ellipse cx="2" cy="2" rx="13" ry="5"/>
+      <path d="M8 1C22-14 36-1 24 5Z"/>
+      <path d="M13 3h7" stroke="#e0a15a" stroke-width="1.5"/>
+    </g>
+    <g transform="translate(528 304)">
+      <path d="M2 1C16-12 26 0 16 4Z"/>
+      <ellipse cx="-2" cy="2" rx="11" ry="4.5"/>
+      <path d="M-8 2C-20-8-24 2-16 4Z"/>
+      <path d="M-12 3h-6" stroke="#e0a15a" stroke-width="1.4"/>
+    </g>
+  </g>
+  <ellipse cx="530" cy="310" rx="14" ry="5" fill="#c4a574"/>
+
+  <path d="M0 512c180-36 340 20 520-8 140-22 280 16 440-10v66H0Z" fill="#4f7c43"/>
+  <g fill="#d4546a">
+    <circle cx="390" cy="500" r="4"/>
+    <circle cx="398" cy="494" r="3.2"/>
+    <circle cx="383" cy="495" r="3"/>
+  </g>
+  <g fill="#f2d56b">
+    <circle cx="860" cy="492" r="4"/>
+    <circle cx="868" cy="486" r="3"/>
+    <circle cx="854" cy="487" r="3"/>
+  </g>
+  <text x="28" y="542" fill="#f4ecd8" font-family="ui-monospace, monospace" font-size="14" letter-spacing="1.5">COUNTY PARK · BROCHURE</text>
+</svg>

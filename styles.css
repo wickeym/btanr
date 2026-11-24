@@ -583,6 +583,195 @@ a {
   line-height: 1.6;
 }
 
+.xray {
+  background:
+    radial-gradient(ellipse 60% 40% at 0% 0%, rgba(80, 180, 170, 0.08), transparent 55%),
+    transparent;
+}
+
+.optics__specs {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.25rem 1.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  max-width: 46rem;
+}
+
+.specs {
+  width: 11rem;
+  height: auto;
+}
+
+.optics__model {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--paper);
+}
+
+.optics__specs ul,
+.optics__notes {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--fog-dim);
+}
+
+.optics__specs li,
+.optics__notes li {
+  margin-bottom: 0.4rem;
+}
+
+.optics__notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+  gap: 0.85rem 1.5rem;
+  margin-top: 1.35rem;
+  list-style: none;
+  padding: 0;
+}
+
+.optics__notes strong {
+  color: var(--paper);
+  font-weight: 600;
+}
+
+.reveal {
+  position: relative;
+  container-type: inline-size;
+  aspect-ratio: 960 / 560;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #101614;
+  cursor: ew-resize;
+  touch-action: none;
+  user-select: none;
+  box-shadow: 0 16px 40px var(--shadow);
+}
+
+.reveal__truth,
+.reveal__pretty {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.reveal__truth {
+  width: 100%;
+}
+
+.reveal__cover {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: var(--split);
+  overflow: hidden;
+}
+
+.reveal__pretty {
+  width: 100cqw;
+}
+
+.reveal::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--split);
+  right: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0 3px,
+    rgba(127, 208, 200, 0.09) 3px 4px
+  );
+  pointer-events: none;
+}
+
+.reveal__handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--split);
+  width: 2.75rem;
+  transform: translateX(-50%);
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--paper);
+  cursor: ew-resize;
+  z-index: 2;
+}
+
+.reveal__handle::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  transform: translateX(-50%);
+  background: #e7f6f3;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35);
+}
+
+.reveal__specs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4.4rem;
+  height: 2.4rem;
+  display: grid;
+  place-items: center;
+  background: var(--ink);
+  border: 2px solid var(--paper);
+  border-radius: 999px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+.reveal__specs svg {
+  width: 3rem;
+  height: auto;
+}
+
+.reveal__handle:focus-visible .reveal__specs {
+  outline: 2px solid #7fd0c8;
+  outline-offset: 3px;
+}
+
+.reveal__tag {
+  position: absolute;
+  top: 0.75rem;
+  z-index: 1;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  pointer-events: none;
+  background: rgba(12, 16, 14, 0.72);
+}
+
+.reveal__tag--cover {
+  left: 0.75rem;
+  color: #3d3428;
+  background: rgba(244, 228, 196, 0.88);
+}
+
+.reveal__tag--truth {
+  right: 0.75rem;
+  color: #9fd8cf;
+}
+
+.reveal__hint {
+  margin: 0.75rem 0 0;
+  font-size: 0.82rem;
+  color: var(--fog-dim);
+}
+
 @media (max-width: 720px) {
   .topbar {
     flex-direction: column;
@@ -595,6 +784,10 @@ a {
 
   .hero {
     align-items: center;
+  }
+
+  .optics__specs {
+    grid-template-columns: 1fr;
   }
 }
 
