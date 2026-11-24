@@ -1,6 +1,6 @@
-# BTANR — Birds & Trees Aren't Real
+# B&TANR — Birds & Trees Aren't Real
 
-Tongue-in-cheek conspiracy archive for the **Birds and Trees Aren't Real Society** (BTANR), a youth chapter comedy project.
+Tongue-in-cheek conspiracy archive for the **Birds and Trees Aren't Real Society** (B&TANR), a youth chapter comedy project.
 
 ## Live site
 
